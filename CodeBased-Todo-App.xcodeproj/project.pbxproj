@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEA199A32AB9EB7900AE23AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA199A22AB9EB7900AE23AB /* AppDelegate.swift */; };
+		DEA199A52AB9EB7900AE23AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA199A42AB9EB7900AE23AB /* SceneDelegate.swift */; };
+		DEA199A72AB9EB7900AE23AB /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA199A62AB9EB7900AE23AB /* mainView.swift */; };
+		DEA199AA2AB9EB7900AE23AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA199A82AB9EB7900AE23AB /* Main.storyboard */; };
+		DEA199AC2AB9EB7A00AE23AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA199AB2AB9EB7A00AE23AB /* Assets.xcassets */; };
+		DEA199AF2AB9EB7A00AE23AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA199AD2AB9EB7A00AE23AB /* LaunchScreen.storyboard */; };
+		DEA199B82AB9EBBF00AE23AB /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEA199B62AB9EBBF00AE23AB /* Task.xcdatamodeld */; };
+		DEA199BD2ABA8E3400AE23AB /* ProfileDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA199BC2ABA8E3400AE23AB /* ProfileDesignView.swift */; };
+		DEA199C22ABAE8B600AE23AB /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA199C12ABAE8B600AE23AB /* InfoView.swift */; };
+		DEA199CD2ABB2A1700AE23AB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DEA199CC2ABB2A1700AE23AB /* SnapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DEA1999F2AB9EB7900AE23AB /* CodeBased-Todo-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeBased-Todo-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA199A22AB9EB7900AE23AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEA199A42AB9EB7900AE23AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEA199A62AB9EB7900AE23AB /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		DEA199A92AB9EB7900AE23AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEA199AB2AB9EB7A00AE23AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEA199AE2AB9EB7A00AE23AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEA199B02AB9EB7A00AE23AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA199B72AB9EBBF00AE23AB /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
+		DEA199BC2ABA8E3400AE23AB /* ProfileDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileDesignView.swift; path = "CodeBased-Todo-App/View/ProfileDesignView.swift"; sourceTree = SOURCE_ROOT; };
+		DEA199C12ABAE8B600AE23AB /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEA1999C2AB9EB7900AE23AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA199CD2ABB2A1700AE23AB /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEA199962AB9EB7900AE23AB = {
+			isa = PBXGroup;
+			children = (
+				DEA199A12AB9EB7900AE23AB /* CodeBased-Todo-App */,
+				DEA199A02AB9EB7900AE23AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEA199A02AB9EB7900AE23AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA1999F2AB9EB7900AE23AB /* CodeBased-Todo-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA199A12AB9EB7900AE23AB /* CodeBased-Todo-App */ = {
+			isa = PBXGroup;
+			children = (
+				DEA199BB2ABA81A000AE23AB /* Model */,
+				DEA199BA2ABA819D00AE23AB /* View */,
+				DEA199B92ABA819300AE23AB /* ViewModel */,
+				DEA199B62AB9EBBF00AE23AB /* Task.xcdatamodeld */,
+				DEA199A22AB9EB7900AE23AB /* AppDelegate.swift */,
+				DEA199A42AB9EB7900AE23AB /* SceneDelegate.swift */,
+				DEA199A82AB9EB7900AE23AB /* Main.storyboard */,
+				DEA199AB2AB9EB7A00AE23AB /* Assets.xcassets */,
+				DEA199AD2AB9EB7A00AE23AB /* LaunchScreen.storyboard */,
+				DEA199B02AB9EB7A00AE23AB /* Info.plist */,
+			);
+			path = "CodeBased-Todo-App";
+			sourceTree = "<group>";
+		};
+		DEA199B92ABA819300AE23AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEA199BA2ABA819D00AE23AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEA199BE2ABAE86D00AE23AB /* SubViews */,
+				DEA199A62AB9EB7900AE23AB /* mainView.swift */,
+				DEA199BC2ABA8E3400AE23AB /* ProfileDesignView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEA199BB2ABA81A000AE23AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEA199BE2ABAE86D00AE23AB /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				DEA199C12ABAE8B600AE23AB /* InfoView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEA1999E2AB9EB7900AE23AB /* CodeBased-Todo-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA199B32AB9EB7A00AE23AB /* Build configuration list for PBXNativeTarget "CodeBased-Todo-App" */;
+			buildPhases = (
+				DEA1999B2AB9EB7900AE23AB /* Sources */,
+				DEA1999C2AB9EB7900AE23AB /* Frameworks */,
+				DEA1999D2AB9EB7900AE23AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodeBased-Todo-App";
+			packageProductDependencies = (
+				DEA199CC2ABB2A1700AE23AB /* SnapKit */,
+			);
+			productName = "CodeBased-Todo-App";
+			productReference = DEA1999F2AB9EB7900AE23AB /* CodeBased-Todo-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEA199972AB9EB7900AE23AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DEA1999E2AB9EB7900AE23AB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DEA1999A2AB9EB7900AE23AB /* Build configuration list for PBXProject "CodeBased-Todo-App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEA199962AB9EB7900AE23AB;
+			packageReferences = (
+				DEA199CB2ABB2A1700AE23AB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = DEA199A02AB9EB7900AE23AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEA1999E2AB9EB7900AE23AB /* CodeBased-Todo-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEA1999D2AB9EB7900AE23AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA199AF2AB9EB7A00AE23AB /* LaunchScreen.storyboard in Resources */,
+				DEA199AC2AB9EB7A00AE23AB /* Assets.xcassets in Resources */,
+				DEA199AA2AB9EB7900AE23AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEA1999B2AB9EB7900AE23AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA199B82AB9EBBF00AE23AB /* Task.xcdatamodeld in Sources */,
+				DEA199A72AB9EB7900AE23AB /* mainView.swift in Sources */,
+				DEA199BD2ABA8E3400AE23AB /* ProfileDesignView.swift in Sources */,
+				DEA199A32AB9EB7900AE23AB /* AppDelegate.swift in Sources */,
+				DEA199C22ABAE8B600AE23AB /* InfoView.swift in Sources */,
+				DEA199A52AB9EB7900AE23AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEA199A82AB9EB7900AE23AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA199A92AB9EB7900AE23AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEA199AD2AB9EB7A00AE23AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA199AE2AB9EB7A00AE23AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEA199B12AB9EB7A00AE23AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEA199B22AB9EB7A00AE23AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEA199B42AB9EB7A00AE23AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RR4V44S8V9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CodeBased-Todo-App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hidaehuynlee.CodeBased-Todo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DEA199B52AB9EB7A00AE23AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RR4V44S8V9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CodeBased-Todo-App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hidaehuynlee.CodeBased-Todo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEA1999A2AB9EB7900AE23AB /* Build configuration list for PBXProject "CodeBased-Todo-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA199B12AB9EB7A00AE23AB /* Debug */,
+				DEA199B22AB9EB7A00AE23AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA199B32AB9EB7A00AE23AB /* Build configuration list for PBXNativeTarget "CodeBased-Todo-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA199B42AB9EB7A00AE23AB /* Debug */,
+				DEA199B52AB9EB7A00AE23AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEA199CB2ABB2A1700AE23AB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEA199CC2ABB2A1700AE23AB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEA199CB2ABB2A1700AE23AB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DEA199B62AB9EBBF00AE23AB /* Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEA199B72AB9EBBF00AE23AB /* Task.xcdatamodel */,
+			);
+			currentVersion = DEA199B72AB9EBBF00AE23AB /* Task.xcdatamodel */;
+			path = Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DEA199972AB9EB7900AE23AB /* Project object */;
+}
