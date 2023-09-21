@@ -87,7 +87,7 @@ class ProfileDesignView: UIViewController {
         
         self.userNameLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(self.view.safeAreaInsets).offset(Constant.userNamePadding)
+            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(Constant.userNamePadding)
         }
         
         self.menuButton.snp.makeConstraints { make in
