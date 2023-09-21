@@ -26,8 +26,9 @@ class InfoView: UIView {
         return label
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(count: Int = 0, text: String = "") { // 재사용 가능한 형식으로 생성자 정의
+        super.init(frame: .zero)
+        
         self.addSubview(infoCount)
         self.addSubview(infoText)
         

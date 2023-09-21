@@ -28,6 +28,8 @@ class ProfileDesignView: UIViewController {
         let button = UIButton()
         
         button.setImage(UIImage(systemName: "line.3.horizontal"), for: .normal)
+        button.addTarget(self, action: #selector(menuButtonTapped), for: .touchUpInside)
+
         return button
     }()
     
@@ -39,25 +41,34 @@ class ProfileDesignView: UIViewController {
     }()
     
     lazy var userPostInfo = {
-        let infoView = InfoView(frame: .zero)
+        let infoView = InfoView(text: "post")
+        
         return infoView
     }()
     
     lazy var userFollowerInfo = {
-        let infoView = InfoView(frame: .zero)
+        let infoView = InfoView(text: "follower")
+
         return infoView
     }()
     
     lazy var userFollowingInfo = {
-        let infoView = InfoView(frame: .zero)
+        let infoView = InfoView(text: "following")
+
         return infoView
     }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        
+        setupUI()
+    }
+    
+    @objc
+    func menuButtonTapped() {
+        self.dismiss(animated: true, completion: nil) // 메뉴버튼에, 임시로 화면 닫기(present 한 현재 뷰 dismiss) 기능 할당함
     }
     
 
@@ -65,9 +76,14 @@ class ProfileDesignView: UIViewController {
         self.view.addSubview(userNameLabel)
         self.view.addSubview(menuButton)
         self.view.addSubview(userPic)
-        self.view.addSubview(userPostInfo)
-        self.view.addSubview(userFollowerInfo)
-        self.view.addSubview(userFollowingInfo)
+        
+        let userFollowInfo = UIView()
+        
+        self.view.addSubview(userFollowInfo)
+        userFollowInfo.addSubview(userPostInfo)
+        userFollowInfo.addSubview(userFollowerInfo)
+        userFollowInfo.addSubview(userFollowingInfo)
+        
         
         self.userNameLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -76,7 +92,18 @@ class ProfileDesignView: UIViewController {
         
         self.menuButton.snp.makeConstraints { make in
             make.centerY.equalTo(self.userNameLabel)
-            make.right.equalTo(userNameLabel.snp.bottom)
+            make.right.equalToSuperview().offset(-16)
+        }
+        
+        self.userPic.snp.makeConstraints { make in
+            make.top.equalTo(userNameLabel.snp.bottom).offset(14)
+            make.left.equalToSuperview().offset(14)
+            make.width.height.equalTo(88)
+        }
+        
+        userFollowerInfo.snp.makeConstraints { make in
+            make.centerX.equalTo(self.userPic)
+            make.right.equalToSuperview().offset(-28)
         }
     }
 
