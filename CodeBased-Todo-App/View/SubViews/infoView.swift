@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class InfoView: UIView {
-    var count: Int = 0
+    var count: Int = 5
     var text: String = ""
     
     lazy var infoCount = {
@@ -26,9 +26,9 @@ class InfoView: UIView {
         return label
     }()
     
-    init(count: Int = 0, text: String = "") { // 재사용 가능한 형식으로 생성자 정의
+    init(count: Int = 3, text: String = "") { // 재사용 가능한 형식으로 생성자 정의
         super.init(frame: .zero)
-        
+                
         self.addSubview(infoCount)
         self.addSubview(infoText)
         
@@ -38,9 +38,11 @@ class InfoView: UIView {
         }
         
         infoText.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
+            $0.centerX.equalTo(infoCount)
             $0.top.equalTo(infoCount.snp.bottom)
         }
+        
+        print("\(self.text) InfoView 생성")
     }
 
     required init?(coder: NSCoder) {

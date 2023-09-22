@@ -40,20 +40,26 @@ class ProfileDesignView: UIViewController {
         return imageView
     }()
     
-    lazy var userPostInfo = {
-        let infoView = InfoView(text: "post")
-        
+    lazy var userPostInfo = { // 기본으로 생성되고 있고, 백그라운드는 안먹고,
+        let infoView = InfoView(count: 9, text: "post")
+        infoView.backgroundColor = .red
+
         return infoView
     }()
     
     lazy var userFollowerInfo = {
-        let infoView = InfoView(text: "follower")
+        let infoView = InfoView(count: 8, text: "follower")
+        infoView.backgroundColor = .blue
 
         return infoView
     }()
     
     lazy var userFollowingInfo = {
-        let infoView = InfoView(text: "following")
+        let infoView = InfoView(count: 7, text: "following")
+
+          infoView.backgroundColor = .yellow
+//        print(infoView.count)
+//        print(infoView.text)
 
         return infoView
     }()
@@ -79,11 +85,11 @@ class ProfileDesignView: UIViewController {
         
         let userFollowInfo = UIView()
         
-        self.view.addSubview(userFollowInfo)
         userFollowInfo.addSubview(userPostInfo)
         userFollowInfo.addSubview(userFollowerInfo)
         userFollowInfo.addSubview(userFollowingInfo)
-        
+        userFollowInfo.backgroundColor = .red
+        self.view.addSubview(userFollowInfo)
         
         self.userNameLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -102,9 +108,8 @@ class ProfileDesignView: UIViewController {
         }
         
         userFollowerInfo.snp.makeConstraints { make in
-            make.centerX.equalTo(self.userPic)
-            make.right.equalToSuperview().offset(-28)
+            make.centerY.equalTo(self.userPic)
+            make.right.equalToSuperview().offset(200)
         }
     }
-
 }
